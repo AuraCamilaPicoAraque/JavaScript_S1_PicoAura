@@ -1,7 +1,7 @@
 export function trainer() {
     const trainers = [
         { ID: "1" , Nombre: "Pedro" , Apellido: "Gómez" , Grupo: "S1 ,S2" },
-        { ID: "2" , Nombre: "Pedro" , Apellido: "Gómez" , Grupo: "S1 ,S2" }
+        { ID: "2" , Nombre: "Edgar" , Apellido: "Acevedo" , Grupo: "E1 ,E2" }
     ];
 
     const id = prompt("Numero de identificacion: ")
