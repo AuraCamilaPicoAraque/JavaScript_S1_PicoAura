@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Oxanium',cursive;
+}
+
+body{
+    text-align: center;
+    background: linear-gradient(to bottom,#6ab7f5,#fff);
+    min-height: 100vh;
+    
+}
+
+.Pokedex {
+    width: 28vw;
+    
+}
+
+.Bottones  {
+    width: 20vw;
+    height: 10vh;
+
+    position: relative;
+    top: -12vw;
+    left: 97.8vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5vw;
+
+    gap: 1.8vw;
+    
+}
+
+#prev , #next {
+
+    font-size: 2vh;
+    width: 10vw;
+    height: 7vh;
+    color: white;
+
+    background-color: rgb(57, 57, 57);
+
+    border: 0.35vh solid black;
+    border-radius: 1vh;
+    box-shadow: -0.3vh 0.5vh 0 #222,-0.6vh 1vh #000;
+
+    transform: translate(-57%,0);
+
+}
+
+
+#prev:active{
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+}
+
+#next:active{
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+}
+
+
+
+
+#showUp {
+    position: relative;
+    top: -43vh;
+    left: 41.6vw;
+
+    display: flex;
+    justify-content: end;
+    width: 15vw;
+    font-size: 3.6vh;
+}
+
+
+
+input {
+    position: relative;
+    top: -36vh;
+    left: -1vh;
+
+    width: 19.5vw;
+    height: 6.5vh;
+    padding-left: 2vh;
+    border: 0.35vh solid black;
+    border-radius: 1vh;
+    box-shadow: -0.3vh 0.5vh 0 #9f9e9ed7,-0.4vh 1.1vh #242424e8;
+
+    cursor: text;
+
+}
+
+input::placeholder {
+    font-size: 2vh;
+    font-weight: 700;
+    padding: 0;
+}
+
+
+
+.imagen_de_Pokemon {
+    position: relative;
+    top: -51vh;
+    left: 14vw;
+
+    
+}

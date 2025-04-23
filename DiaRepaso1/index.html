@@ -3,12 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pokedex</title>
 </head>
 <body>
-    <div id="daticos">
+    <main>
+        <img src="#" class="imagen_de_Pokemon">
 
-    </div>
+        <h1 class="Pokemon_texto">
+            <span class="Numero"></span>
+            <span class="Nombre"> </span>
+        </h1>
+
+<!-- FORM-> sirve para crear formularios que permiten a los usuarios introducir información y enviarla al servidor-->
+        <form class="Pokemon_formulario">
+            <input type="search"
+                    class="input_buscar"
+                    placeholder="Nombre o Numero"
+                    required>
+        </form>
+
+<!-- DIV-> Para los botones de seleccion -->
+        
+        <div class="Pokemon_Botones">
+            <button class="Pokemon_Botones_Anterior">Prev &lt</button>
+            <button class="Pokemon_Botones_Siguiente">Next &lt</button>
+        </div>
+        <img src="./img/pokedex.png" class="Pokemon_Imagen_pokedex">
+        <audio autoplay src="" class="gritos"></audio>
+    </main>
 </body>
 <script src="./script.js"></script>
 </html>
