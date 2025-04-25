@@ -10,11 +10,31 @@ body{
 
 .seccion_fondo {
     background-size: cover;       
-    background-position: center;  
+
     background-repeat: no-repeat; 
 
     height: 100vh;   
     width: 100vw;
-
-    
 }
+
+.seccion2_cartas1 {
+    position: absolute;
+    top: 15vh;
+    left: 30vw;
+
+    width: 10vw;
+    
+    z-index: 1;
+}
+
+.seccion2_cartas2 {
+    position: absolute;
+    top: 15vh;
+    left: 60vw;
+
+    width: 10vw;
+
+    z-index: 1;
+}
+
+
