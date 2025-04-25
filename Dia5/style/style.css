@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+}
+
+.seccion_fondo {
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+
+    height: 100vh;   
+    width: 100vw;
+}
+
+.seccion_logo {
+    width: 14vw;
+    height: 29vh;
+
+
+    position: absolute;
+    top: 2vh;
+    left: 44vw;
+
+    z-index: 1;
+}
+
+
+
+.botones {
+    position: absolute;
+    top: 40vh;
+    left: 44vw;
+
+    width: 14vw;
+    height: 8vh;
+
+    background: linear-gradient(to top,  #005a3b,  #005a3b);
+    border: 0.1vh solid #27d684;
+    border-radius: 1vh;
+    box-shadow: 0 0.6vh 2vh rgba(0,0,0,0.3);
+
+    box-shadow: -0.3vh 0.5vh 0 #27d684;
+
+    font-family: 'Comic Relief';
+    font-size: 3vh;
+
+    color: white;
+    font-weight: lighter;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease, transform 0.2s;
+
+}
+
+
+.botones2 {
+    position: absolute;
+    top: 52vh;
+    left: 44vw;
+    
+    width: 14vw;
+    height: 8vh;
+
+
+    background: linear-gradient(to top,  #000608, #070e0fed);
+    border: 0.1vh solid #928a88;
+    border-radius: 1vh;
+    box-shadow: 0 0.6vh 2vh rgba(0,0,0,0.3);
+
+    box-shadow: -0.3vh 0.5vh 0 #928a88;
+
+    font-family: 'Comic Relief';
+    font-size: 3vh;
+
+    color: white;
+    font-weight: lighter;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease, transform 0.2s;
+
+}

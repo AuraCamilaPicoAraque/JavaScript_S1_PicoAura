@@ -1,3 +1,7 @@
+const pokemonImage = document.querySelector('.pokemon__image');
+
+
+
 function fetchPoke(){
     let id= document.getElementById("pokeId").value;
     let solicitud = new XMLHttpRequest();
@@ -23,11 +27,27 @@ function displayPoke(data){
 }
 
 
-function minus_id(){
+function displaydata (data) {
+
+    let sprite =document.getElementById('Pokemon_Image');
+    
+    if (data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'] --- null ) {
+    sprite.innerHTML - ` 
+        <div style=" position: absolute; top: 30%" 
+        ></div>'
+    `
+}
+}   
+
+
+
+
+
+function anterior_id(){
     console.log("Testing");
 }
 
-function plus_id(){
+function siguiente_id(){
     console.log("Testing");
 }
 
@@ -35,5 +55,6 @@ const input=document.getElementById("pokeId");
 input.addEventListener("keydown", function (event)  {
     if(event.key==="Enter"){
         fetchPoke();
+        input.value = "";
     }
 });

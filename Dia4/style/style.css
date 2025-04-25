@@ -8,21 +8,23 @@ body{
     text-align: center;
     background: linear-gradient(to bottom,#6ab7f5,#fff);
     min-height: 100vh;
-    
+    overflow: hidden;
+    margin: 1;
+    padding: 0;
 }
 
 .Pokedex {
-    width: 28vw;
-    
+    width: 29.55vw;
 }
 
 .Bottones  {
     width: 20vw;
     height: 10vh;
 
-    position: relative;
-    top: -12vw;
-    left: 97.8vh;
+    position: absolute;
+    left: 6.5vw;
+    top: 77vh;
+
 
     display: flex;
     flex-direction: row;
@@ -47,6 +49,8 @@ body{
     box-shadow: -0.3vh 0.5vh 0 #222,-0.6vh 1vh #000;
 
     transform: translate(-57%,0);
+    
+    cursor:pointer;
 
 }
 
@@ -65,22 +69,21 @@ body{
 
 
 #showUp {
-    position: relative;
-    top: -43vh;
-    left: 41.6vw;
-
+    position: absolute;
+    top: 50vh;
+    left: 1.5vw;
     display: flex;
     justify-content: end;
-    width: 15vw;
+    width: 19vw;
     font-size: 3.6vh;
 }
 
 
 
 input {
-    position: relative;
-    top: -36vh;
-    left: -1vh;
+    position: absolute;
+    top: 61.5vh;
+    left: 1.8vw;
 
     width: 19.5vw;
     height: 6.5vh;
@@ -104,7 +107,18 @@ input::placeholder {
 .imagen_de_Pokemon {
     position: relative;
     top: -51vh;
-    left: 14vw;
+    left: 14vw;    
+}
 
-    
+
+
+.todito {
+    position: absolute;
+    top: 5.5vh;
+    left: 37.2vw; 
+
+    width: 23vw;
+    height: 90vh;
+
+    border-radius: 2vh;
 }
