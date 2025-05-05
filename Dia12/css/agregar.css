@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('../img/fondoparaingresar1.png') center/cover no-repeat fixed;
+    min-height: 100vh;
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, 
+                             transparent 10%, 
+                             rgba(0, 0, 0, 0.39) 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+
+.contenedor {
+    background-image: url(../img/objeto2.png);
+    background-repeat: no-repeat;
+    
+}
