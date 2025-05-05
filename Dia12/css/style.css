@@ -1,5 +1,8 @@
 body {
-  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  background: url('../img/fondo.webp') center/cover no-repeat fixed;
+  min-height: 100vh;
 }
 
 h1 {
@@ -7,9 +10,9 @@ h1 {
   color: #333;
 }
 
-form {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+.ingresar , .agregar , .salir {
+  width: 10vw;
+  height: 10vh;
+  font-size: 5vh;
 }
+

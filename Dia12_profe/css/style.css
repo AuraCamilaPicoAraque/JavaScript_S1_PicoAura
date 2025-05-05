@@ -1,0 +1,76 @@
+@import url(./variable.css);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "fuente";
+}
+
+h2 {
+    color: white;
+}
+
+.busqueda {
+    background-color: var(--color-1);
+    padding: 30px;
+    text-align: center;
+}
+
+.busqueda h2{
+    margin: 5px;
+    font-size: 40px;
+}
+
+#descripcion {
+    color: rgb(225, 225, 225);
+}
+
+.busqueda_var input {
+    margin-top: 20px;
+    padding-left: 20px;
+
+    border: 1px solid var(--color-3);    
+    border-radius: 20px;
+
+    width: 90%;    
+    height: 40px;
+
+    color: var(--color-2);
+
+    font-size: 15px;
+}
+
+.menu_gente {
+    display: flex;
+    flex-direction: row;
+
+    gap: 20px;
+    border: 1px solid var(--color-1);
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.foto img {
+    width: 85px;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+
+.information {
+    margin-top: 18px;
+}
+
+.information h3{
+    font-size: 25px;
+    color: var(--color-2);
+}
+
+.information p{
+    margin-top: 5px;
+    color: var(--color-2);
+}
