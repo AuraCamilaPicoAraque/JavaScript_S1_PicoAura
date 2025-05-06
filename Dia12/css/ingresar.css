@@ -37,9 +37,15 @@ p {
   display: flex;
   gap: 1vw;
   padding-left: 4vw;
-  border: 3px solid rgba(120, 103, 59, 0.951);
-  box-shadow: -0.4vh -0.4vh 0 rgba(120, 103, 59, 0.951);
-  border-right-style:outset;
+  margin-top: 5vh;
+  border: 3px solid rgba(247, 197, 68, 0.574);
+  box-shadow: 
+  -0.2vh 0.5vh 0 rgba(255, 209, 108, 0.282),
+  -0.5vh 1vh 0 rgba(45, 34, 10, 0.951);
+  border-right-style:none;
+  border-bottom-left-radius: 100vh;
+  background: linear-gradient(to right, #090e1e, rgba(52, 152, 219, 0));
+
 }
 
 .id , .nombre {
@@ -47,7 +53,6 @@ p {
 }
 
 .contenedor__informacion_debajodelaimagen {
-  border: 0.6vh solid black;
   width: 30vw;
   height: 77vh;
   position: absolute;
@@ -76,18 +81,28 @@ p {
   left: 15vw;
 }
 
-
 .container_descripcion {
   background-color: #090e1ec8;
   padding: 0.5vw;
   border: 0.8vh solid #090e1e;
 
+  position: relative;
+  top: 13.5vw;
   box-shadow: 
   -0.5vh -0.5vh 0 #0e1737d5,
   -1vh -1vh 0 #090e1e;
 }
 
+/* APARTADO DEL TEXTO*/
 
+.text1 {
+  position: relative;
+  top: 3vw;
+}
+.text2 {
+  position: relative;
+  top: 8vw;
+}
 
 
 /*  APARTADO DE ARRIBA*/
@@ -148,6 +163,11 @@ p {
   z-index: 9999;
 
   width: 4.5vw;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.flechitadeatras:hover {
+  transform: scale(1.10);
 }
 
 .text {
@@ -158,6 +178,11 @@ p {
   width: 8vw;
   z-index: 9999;
   font-family: "letratextos";
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.text:hover {
+  transform: scale(1.05);
 }
 
 

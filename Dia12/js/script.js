@@ -14,8 +14,8 @@ function traer(eleccion, respuesta) {
                             <div class="contenedor__informacion_debajodelaimagen"> 
                                 <div class="id"><p>${campeones[i]["id"]} ~ </p>
                                 <p class="nombre">${campeones[i]["nombre"]}</p> </div>
-                                <p>${campeones[i]["region"]}</p>
-                                <p>${campeones[i]["tipo"]}</p>
+                                <p class="text1">${campeones[i]["region"]}</p>
+                                <p class="text2">${campeones[i]["tipo"]}</p>
                                 <div class="container_descripcion"> <p>${campeones[i]["descripcion"]}</p> </div>
                             </div>
                                 <img src="${campeones[i]["imagen"]}" class="imagen_campeon"/>
