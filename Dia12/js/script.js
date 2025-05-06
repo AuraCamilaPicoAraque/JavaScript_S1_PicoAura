@@ -9,7 +9,7 @@ function traer(eleccion, respuesta) {
                 // el if nos verificara si la eleccion de region es igual a la region del campeon
                 if (eleccion == campeones[i]["region"]) {
                     // muestra la informaci{on en el css
-                    acumulador += `
+                    acumulador += `<br><br><br> 
                         <div class="contenedor_informacion">
                             <div class="contenedor__informacion_debajodelaimagen"> 
                                 <div class="id"><p>${campeones[i]["id"]} ~ </p>

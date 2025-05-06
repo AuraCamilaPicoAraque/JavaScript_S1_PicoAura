@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "letratitulos";
+  src: url("https://db.onlinewebfonts.com/t/12420e8c141ca7c3dff41de2d59df13e.eot");
+}
+
+@font-face {
+  font-family: "letratextos";
+  src: url("https://db.onlinewebfonts.com/t/3bd637b3a86a512a2bc2ac1d8b77d56e.eot");
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -53,6 +63,7 @@ p {
 }
 
 .contenedor_informacion {
+  margin-top: 10vh;
   border: 4px solid rgba(120, 103, 59, 0.951);
   box-shadow: 
   -1vh -1vh 0 rgb(0, 0, 0),
@@ -75,3 +86,152 @@ p {
   -0.5vh -0.5vh 0 #0e1737d5,
   -1vh -1vh 0 #090e1e;
 }
+
+
+
+
+/*  APARTADO DE ARRIBA*/
+
+.selector_css {
+  background-color: #090e1e;
+  color: white;
+  position: absolute;
+  font-family: "Beaufort for LOL Bold";
+
+  top: 3vh;
+  left: 37vw;
+
+  text-align: center;
+  font-size: 2.5vh;
+  width: 14vw;
+  height: 8vh;
+  
+  border: 0.4vh solid #45371edc;
+  border-radius: 1vh;
+  transition: .2s linear;
+  cursor: pointer;
+}
+
+.selector_css1 {
+  background-color: #090e1e;
+  color: white;
+  position: absolute;
+  top: 3vh;
+  left: 52vw;  
+  font-family: "Beaufort for LOL Bold";
+
+
+  font-size: 2.5vh;
+  width: 12vw;
+  height: 8vh;
+
+  border: 0.4vh solid #45371edc;
+  border-radius: 1vh;
+  transition: .2s linear;
+  cursor: pointer;
+}
+
+.selector_css:hover , .selector_css1:hover {
+  background-color: #131e40;
+  border: 0.3vh solid #091439;
+  border-radius: 1vh;
+  box-shadow: 
+  -0.4vh 0.6vh 0  #0f1835b9,
+  -1vh 1.5vh 0 #0a0f1f;
+
+}
+
+.flechitadeatras {
+  text-decoration: none;
+  position: absolute;
+  top: 1.5vh;
+  z-index: 9999;
+
+  width: 4.5vw;
+}
+
+.text {
+  position: absolute;
+  top: 1.5vh;
+  left: 21.5vw;
+  font-size: 1.9vh;
+  width: 8vw;
+  z-index: 9999;
+  font-family: "letratextos";
+}
+
+
+.conteiner_arriba {
+  background-color: #090e1eb8;
+
+  box-shadow: 
+  0 0.6vh 0  #785A28,
+  0 1.5vh 0 rgb(59, 49, 26);
+  width: 98.7vw;
+  height: 15vh;
+
+}
+
+
+.bandera {
+  position: absolute;
+  top: -1vh;
+  left: 91.5vw;
+
+  width: 7vw;
+  z-index: 99;
+
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.bandera:hover {
+  transform: scale(1.10);
+  filter: brightness(1.2);
+}
+
+
+.logo {
+  position: absolute;
+  top: 9.5vh;
+  left: 24.5vw;
+  border-radius: 50%;
+  opacity: 50%;
+  width: 8vw;
+  z-index: 99;
+  transform: rotate(180deg);
+}
+
+.logo1 {
+  position: absolute;
+  top: 0.7vh;
+  left: 17.6vw;
+  border-radius: 50%;
+  opacity: 50%;
+  width: 8vw;
+  z-index: 99;
+
+}
+
+.icono {
+  position: absolute;
+  top: 2vh;
+  left: 7vw;
+  border-radius: 50%;
+  opacity: 50%;
+  width: 4vw;
+  z-index: 99;
+  
+  transition: transform 0.5s ease;
+  cursor:pointer;
+
+}
+
+.icono:hover {
+  animation: spin .5s ease-in-out;
+}
+
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
