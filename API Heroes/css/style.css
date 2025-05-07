@@ -50,7 +50,12 @@ body {
 .container__formulario {
     padding-left: 4vh;
     font-family: "titulo2";
-    
+}
+
+.container__formulario {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
 }
 
 .buttons {
@@ -75,7 +80,6 @@ body {
 
 /* INPUT Y LABELS*/
 
-
 label {
     display: flex;
     width: 10vw;
@@ -91,6 +95,7 @@ label {
     padding-left: 2vh;
     margin-top: 1vh;
 }
+
 
 
 #label_actor , #actor {
