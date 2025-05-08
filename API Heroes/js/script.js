@@ -58,9 +58,19 @@ document.getElementById("botonmas").addEventListener("click", function (e) {
     <div class="container_nuevo_traje">
         <label for="nombre_traje" class="textoo">Nombre traje</label><br><br> 
         <div class="paquesealinee"><input id="input_traje" class="form-control" type="text" /> <br> <br>
-        <button class="btn btn-danger eliminar">-</button></div>
+        <button class="btn btn-danger borrar">-</button></div>
     </div>`
 })
+
+
+
+/// FUNCION PARA QUE ELIMINE 
+document.getElementById(".borrar").addEventListener('click', function (e) {
+    e.preventDefault();
+    const element = document.querySelector(".container_nuevo_traje");
+    element.remove('.container_nuevo_traje');
+});
+
 
 
 // Función para guardar un nuevo héroe
