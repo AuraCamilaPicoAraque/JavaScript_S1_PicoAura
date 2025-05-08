@@ -25,6 +25,7 @@ body {
 
 .textoo {
     color: var(--bs-primary);
+    gap: 2vh;
 }
 
 .todito {
@@ -43,3 +44,34 @@ body {
 
 /* APARTO 2*/
 
+.card {
+    padding: 1vh;
+}
+
+.card-header {
+   font-size: 2.5vh;
+}
+
+
+.container {
+    margin-top: 2vh;
+}
+#botonmas {
+    margin-top: 1vh;
+}
+
+#añadir_name_trajes{
+    display: none;
+}
+
+
+.container_nuevo_traje {
+    width: 35vw;    
+    position: relative;
+    left: 5vw;
+}
+
+.paquesealinee {
+    display: flex;
+    gap:2vh;
+}

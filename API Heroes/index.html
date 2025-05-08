@@ -22,84 +22,78 @@
                     <div class="row">
                         <div class="col">
                             <label for="Nombre" id="label_nombrepersonaje">Nombre Personaje</label> <br>
-                            <input type="text" id="nombrepersonaje" name="NombrePersonaje" class="form-control" required/>
+                            <input type="text" id="nombrepersonaje" name="NombrePersonaje"
+                                class="form-control input_habilitado" required disabled />
                         </div>
 
                         <div class="col">
                             <label for="Actor" id="label_actor">Nombre Actor</label> <br>
-                            <input type="text" id="Actor" name="nombreActor" class="form-control" required/>
+                            <input type="text" id="Actor" name="nombreActor" class="form-control input_habilitado"
+                                required disabled />
                         </div>
                         <div class="row mb-3">
                         </div>
                         <div class="col">
                             <label for="edad" id="label_edadactor">Edad Actor</label> <br>
-                            <input type="text" id="edad_actor" name="edadActor" class="form-control" required/>
+                            <input type="text" id="edad_actor" name="edadActor" class="form-control input_habilitado"
+                                required disabled />
                         </div>
 
                         <div class="col">
                             <label for="localizacion" id="label_location">Ubicacion</label> <br>
-                            <input type="text" id="location" name="localizacion" class="form-control" required/>
+                            <input type="text" id="location" name="localizacion" class="form-control input_habilitado"
+                                required disabled />
                             <div id="passwordHelpBlock" class="form-text"> Nombre de la ciudad de origen </div> <br>
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col">
                             <label for="poster" id="label_poster">Poster</label> <br>
-                            <input type="text" id="poster" name="poster" class="form-control" required/>
+                            <input type="text" id="poster" name="poster" class="form-control input_habilitado" required
+                                disabled />
                         </div>
 
                         <div class="col">
                             <label for="birthdate" id="label_nacimiento">Fecha de nacimiento</label> <br>
-                            <input type="date" id="nacimiento" name="nacimiento" class="form-control" required/>
+                            <input type="date" id="nacimiento" name="nacimiento" class="form-control input_habilitado"
+                                required disabled />
                         </div>
                     </div>
                     <div class="row mb-4">
                         <div>
                             <label for="productora" id="label_productora">productora</label> <br>
-                            <select name="productora" id="productora" class="form-select">
+                            <select name="productora" id="productora" class="form-select input_habilitado" required
+                                disabled>
                                 <option value="">Marvel</option>
                                 <option value="">DComics</option>
                             </select>
                         </div>
                     </div>
+                    <div id="añadir_name_trajes">
+                        <div class="card">
+                            <div class="card-header">Registro de Trajes</div>
+                            <div class="container">
+                                <h4 class="textoo">Trajes del personaje</h4>
+                                <h6 class="textoo">En esta sección podra registrar los nombres de los trajes usados por
+                                    el actor en cada una
+                                    de las peliculas<h6>
+                                        <button id="botonmas" class="btn btn-warning"> + </button>
+                                        <div id="añadir_traje"></div>
 
+                            </div>
+                        </div> <br>
+                    </div>
                     <div class="row mb-4">
                         <div class="buttons">
-                            <button id="nuevo_heroe" class="btn btn-dark">Nuevo Heroe</button>
+                            <button id="nuevo_heroe" class="btn btn-dark" class="añadir_traje">Nuevo Heroe</button>
                             <button id="guardar_heroe" class="btn btn-primary">Guardar Heroe</button>
                             <button id="cancelar" class="btn btn-danger">Cancelar</button>
                         </div>
                     </div>
-
-                    <div class="apartadodelostrajes"></div>
-
                 </form>
             </div>
         </div>
-
     </div>
-
-<!--
-
-    <div class="card">
-        <div class="card-header">Registro de Trajes</div>
-        <div class="container">
-            <h5 class="textoo">Trajes del personaje</h5>
-            <h6 class="textoo">En esta sección podra registrar los nombres de los trajes usados por el actor en cada una
-                de las peliculas<h6>
-                    <button class="btn btn-warning"> + </button>
-                    <div class="añadir_traje"></div>
-        </div>
-    </div>
-
-    <div id="añadir">
-            <div class="col">
-                <label for="nombre_traje" class="textoo">Nombre traje</label><br>
-                <input class="form-control" type="text" />
-                <button class="btn btn-danger">-</button>
-            </div>
-    </div>
--->
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>

@@ -5,12 +5,12 @@ const api = 'https://681bd7ee6ae7c794cf6ff13d.mockapi.io/heroe';
 function validarCampos() {
     let valido = true;
     const camposObligatorios = [
-        { id: 'nombrepersonaje'},
-        { id: 'Actor'},
-        { id: 'edad_actor'},
-        { id: 'location'},
-        { id: 'poster'},
-        { id: 'nacimiento'},
+        { id: 'nombrepersonaje' },
+        { id: 'Actor' },
+        { id: 'edad_actor' },
+        { id: 'location' },
+        { id: 'poster' },
+        { id: 'nacimiento' },
     ];
 
     camposObligatorios.forEach(campo => {
@@ -25,6 +25,42 @@ function validarCampos() {
 
     return valido;
 }
+
+
+// Nuevo Heroe
+
+const nuevo = document.getElementById('nuevo_heroe');
+
+nuevo.addEventListener('click', NUEVO);
+
+function NUEVO() {
+    document.querySelectorAll('.input_habilitado').forEach(habilitado => {
+        habilitado.removeAttribute('disabled');
+    });
+}
+
+
+
+
+// funcion que aparesca el traje
+
+document.getElementById("nuevo_heroe").addEventListener('click', function (e) {
+    e.preventDefault();
+    const container = document.getElementById("añadir_name_trajes")
+    container.style.display = "block";
+});
+document.getElementById("botonmas").addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const solicitud = document.getElementById("añadir_traje")
+
+    solicitud.innerHTML += `    
+    <div class="container_nuevo_traje">
+        <label for="nombre_traje" class="textoo">Nombre traje</label><br><br> 
+        <div class="paquesealinee"><input id="input_traje" class="form-control" type="text" /> <br> <br>
+        <button class="btn btn-danger eliminar">-</button></div>
+    </div>`
+})
 
 
 // Función para guardar un nuevo héroe
@@ -62,7 +98,7 @@ async function guardarHeroe(event) {
 
 // Validación en tiempo real
 document.querySelectorAll('[required]').forEach(input => {
-    input.addEventListener('input', function() {
+    input.addEventListener('input', function () {
         if (this.value.trim()) {
             this.classList.remove('is-invalid');
         }
