@@ -45,13 +45,7 @@ body {
 
 /* APARTO 2*/
 
-.card {
-    padding: 1vh;
-}
 
-.card-header {
-   font-size: 2.5vh;
-}
 
 
 .container {
@@ -68,8 +62,7 @@ body {
 
 .container_nuevo_traje {
     width: 35vw;    
-    position: relative;
-    left: 5vw;
+    margin-left: 15vh;
 }
 
 .paquesealinee {
