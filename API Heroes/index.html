@@ -64,8 +64,10 @@
                             <label for="productora" id="label_productora">productora</label> <br>
                             <select name="productora" id="productora" class="form-select input_habilitado" required
                                 disabled>
-                                <option value="">Marvel</option>
-                                <option value="">DComics</option>
+                                <option value="" selected disabled>Seleccione productora</option>
+                                <option value="Marvel">Marvel</option>
+                                <option value="DC">DC</option>
+                                <option value="Otra">Otra</option>
                             </select>
                         </div>
                     </div>
@@ -83,6 +85,7 @@
                             </div>
                         </div> <br>
                     </div>
+
                     <div class="row mb-4">
                         <div class="buttons">
                             <button id="nuevo_heroe" class="btn btn-dark" class="añadir_traje">Nuevo Heroe</button>
@@ -91,6 +94,49 @@
                         </div>
                     </div>
                 </form>
+
+
+                <!-- APARTADO DE LAS ALERTAS :D -->
+                <!-- Modal de éxito -->
+                <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-success text-white">
+                                <h1 class="modal-title fs-5" id="successModalLabel">¡Éxito!</h1>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                El héroe se ha guardado correctamente.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal de error -->
+                <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-danger text-white">
+                                <h1 class="modal-title fs-5" id="errorModalLabel">Error</h1>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Hubo un problema al guardar el héroe. Por favor, inténtalo de nuevo.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Aceptar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

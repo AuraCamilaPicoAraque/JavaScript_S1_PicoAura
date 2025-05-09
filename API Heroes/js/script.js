@@ -64,22 +64,27 @@ document.getElementById("botonmas").addEventListener("click", function (e) {
 
 
 
-/// FUNCION PARA QUE ELIMINE 
-document.getElementById(".borrar").addEventListener('click', function (e) {
+// FUNCION PARA QUE ELIMINE (DELEGACIÓN DE EVENTOS)
+document.getElementById("añadir_traje").addEventListener('click', function (e) {
     e.preventDefault();
-    const element = document.querySelector(".container_nuevo_traje");
-    element.remove('.container_nuevo_traje');
+    if (e.target.classList.contains('borrar')) {
+        e.target.closest('.container_nuevo_traje').remove();
+    }
 });
 
 
 
 // Función para guardar un nuevo héroe
 async function guardarHeroe(event) {
-    event.preventDefault(); // Evita que el formulario se recargue
+    event.preventDefault();
 
     if (!validarCampos()) {
         return;
     }
+
+    // Obtener todos los trajes añadidos
+    const inputsTrajes = document.querySelectorAll('#input_traje');
+    const trajes = Array.from(inputsTrajes).map(input => input.value).filter(traje => traje.trim() !== '');
 
     // Obtener valores del formulario
     const nuevoHeroe = {
@@ -89,19 +94,26 @@ async function guardarHeroe(event) {
         Ubicacion: document.getElementById('location').value,
         Poster: document.getElementById('poster').value,
         Fecha_Nacimiento: document.getElementById('nacimiento').value,
-        Productora: document.getElementById('productora').value,
-        traje: "",
+        Productora: document.getElementById('productora').options[document.getElementById('productora').selectedIndex].value,
+        traje: trajes, // Esto guardará un array con todos los trajes
         id: Date.now().toString()
     };
 
     try {
-        // Enviar datos al servidor con Axios (POST)
         const response = await axios.post(api, nuevoHeroe);
         console.log('Héroe guardado:', response.data);
-        // Limpiar el formulario después de guardar
+
+        // Mostrar modal de éxito
+        const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+        successModal.show();
+
         document.querySelector('form').reset();
+        // Limpiar también los trajes añadidos dinámicamente
+        document.getElementById('añadir_traje').innerHTML = '';
     } catch (error) {
         console.error('Error al guardar:', error);
+        const errorModal = new bootstrap.Modal(document.getElementById('errorModal'));
+        errorModal.show();
     }
 }
 

@@ -19,8 +19,9 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    background-color: rgba(232, 232, 232, 0.439);
-  }
+    background: linear-gradient(to right, #0c2141, #030913);
+}
+
 
 
 .textoo {
@@ -38,7 +39,7 @@ body {
 
 .card {
     border: 0.3vh solid rgb(164, 164, 164);
-    box-shadow: -1vh 1vh 0 rgba(111, 111, 111, 0.262);
+    box-shadow: -1vh 1vh 0 rgba(111, 111, 111, 0.371);
 }
 
 
@@ -74,4 +75,11 @@ body {
 .paquesealinee {
     display: flex;
     gap:2vh;
+}
+
+/* pa la alerta*/
+
+.modal-content {
+    border-radius: 15px;
+    box-shadow: -2px 5px 1px rgba(0,0,0,0.3);
 }
