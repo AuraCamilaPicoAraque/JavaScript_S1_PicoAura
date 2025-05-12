@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "text";
+    src: url();
+}
+
+/*  SECCION 1 - LINEA  */
+
+
+.seccion1__arriba {
+    background-color: #FB9434;
+    width: 100vw;
+    height: 15vh;
+    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.337);
+
+    display: flex;
+    align-items: center;
+
+}
+
+.logo1 {
+    width: 10vh;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textpet {
+    color: white;
+    font-size: 3vh;
+    margin-top: 1vh;
+}
+
+/* GATO */
+.gato {
+    background-color: white;
+    width: 5vw;
+    height: 10vh;
+    border-radius: 1.5vh;
+    box-shadow: -0.5vh 0.5vh 0 rgba(0, 0, 0, 0.287);
+    position: relative;
+    left: 25vw;
+}
+
+.gatino {
+    width: 5vw;
+    height: 10vh;
+}
+
+/* PERRITO */
+.perro {
+    background-color: white;
+    width: 5vw;
+    height: 10vh;
+    border-radius: 1.5vh;
+    box-shadow: -0.5vh 0.5vh 0 rgba(0, 0, 0, 0.287);
+    position: relative;
+    left: 30vw;
+}
+
+.perrino {
+    width: 5vw;
+    height: 10vh;
+}
+
+
+
+/* OTROS */
+
+.otro {
+    background-color: white;
+    width: 5vw;
+    height: 10vh;
+    border-radius: 1.5vh;
+    box-shadow: -0.5vh 0.5vh 0 rgba(0, 0, 0, 0.287);
+    position: relative;
+    left: 35vw;
+}
+
+.otrino {
+    width: 5vw;
+    height: 10vh;
+}
+
+
+.favorito {
+    width: 19vh;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    left: 50vw;
+}
+
+.favoritino {
+    width: 5vh;
+    margin-right: 1vh;
+}
+
+.textfavori {
+    color: white;
+    font-size: 3vh;
+    margin-top: 1vh;
+}
+
+.favorito {
+    background-color: #FF8A1D;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 12vw;
+    height: 6vh;
+
+    position: relative;
+    left: 47vw;
+
+    border-radius: 5vh;
+    box-shadow: -0.5vh 0.5vh 0 rgba(0, 0, 0, 0.287);
+}
+
+.inice {
+    background-color: #FF8A1D;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 12vw;
+    height: 6vh;
+
+    position: relative;
+    left: 49vw;
+
+    border-radius: 5vh;
+    box-shadow: -0.5vh 0.5vh 0 rgba(0, 0, 0, 0.287);
+}
+
+
+
+
+/*  SECCION2 -    */
+
+.fondo {
+    background: url(../img/fondo2\ 1.png);
+}
