@@ -32,89 +32,20 @@
 
             <!-- boostrap inputs xd me dio flojera hacerlo a mano -->
             <div class="container mt-4 rounded">
-                <div class="row g-0 shadow-sm rounded">
-                    <div class="col-md-8 d-flex align-items-center ps-3 bg-white">
-                        <i class="bi bi-search text-muted me-2"></i>
-                        <input type="text" class="form-control border-0 py-3" placeholder="Buscar">
-                    </div>
-
-                    <div class="col-md-3 d-flex align-items-center bg-white">
-                        <i class="bi bi-geo-alt text-muted mx-2"></i>
-                        <input type="text" class="form-control py-3" placeholder="Ingrese la cuidad  ">
-                    </div>
-
-                    <div class="col-md-1">
-                        <button class="btn naranja h-100 w-100 rounded-0">
-                            <img src="./img/obje/busqueda.svg" class="busqueda">
-                        </button>
-                    </div>
+                <input type="text" class="form-control border-0 py-3" placeholder="Buscar">
+                <input type="text" class="form-control py-3 ingrese" placeholder="Ingrese la cuidad">
+                <div class="col-md-1">
+                    <button class="btn naranja h-100 w-100 rounded-0">
+                        <img src="./img/obje/busqueda.svg" class="busqueda">
+                    </button>
                 </div>
             </div>
+
+
         </div>
 
-
-        <div class="container_filtro ">
-            <div class="filtro text-light"><img src="./img/obje/filtro.png" class="filtro_icono"/> Filtro:</div>
-            <!-- SELECCION DE TIPO DE MASCOTAS  -->
-            <select name="tipo_mascota" id="tipo_mascotas" class="text-center style_mascotas mover_mascota">
-                <option value="" selected disabled>tipo de mascota</option>
-                <option value="perros">perros</option>
-                <option value="gatos">gatos</option>
-                <option value="loros">loros</option>
-                <option value="Hurónes">Hurónes</option>
-                <option value="Hamsters">Hamsters</option>
-            </select>
-
-            <!-- SELECCION DE EDAD DE MASCOTA  -->
-            <select name="edad_mascota" id="edad_mascotas" class="text-center style_mascotas mover_edad">
-                <option value="" selected disabled> edad mascota</option>
-                <option value="infante">infante</option>
-                <option value="adolescente">adolescente</option>
-                <option value="adulto">adulto</option>
-                <option value="anciano">anciano</option>
-                <option value="geriatrico">geriatrico</option>
-            </select>
-
-            <!-- SELECCION DE UBICACION DE LOS ANIMALES DISPONIBLES  -->
-            <select name="ubicacion" id="ubicacion" class="text-center style_mascotas mover_ubicacion">
-                <option value="" selected disabled>Selecciona una ubicación</option>
-                <option value="amazonas">Amazonas</option>
-                <option value="antioquia">Antioquia</option>
-                <option value="arauca">Arauca</option>
-                <option value="atlantico">Atlántico</option>
-                <option value="bolivar">Bolívar</option>
-                <option value="boyaca">Boyacá</option>
-                <option value="caldas">Caldas</option>
-                <option value="caqueta">Caquetá</option>
-                <option value="casanare">Casanare</option>
-                <option value="cauca">Cauca</option>
-                <option value="cesar">Cesar</option>
-                <option value="choco">Chocó</option>
-                <option value="cordoba">Córdoba</option>
-                <option value="cundinamarca">Cundinamarca</option>
-                <option value="guainia">Guainía</option>
-                <option value="guaviare">Guaviare</option>
-                <option value="huila">Huila</option>
-                <option value="la-guajira">La Guajira</option>
-                <option value="magdalena">Magdalena</option>
-                <option value="meta">Meta</option>
-                <option value="nariño">Nariño</option>
-                <option value="norte-de-santander">Norte de Santander</option>
-                <option value="putumayo">Putumayo</option>
-                <option value="quindio">Quindío</option>
-                <option value="risaralda">Risaralda</option>
-                <option value="san-andres">San Andrés</option>
-                <option value="santander">Santander</option>
-                <option value="piedecuesta">Piedecuesta</option>
-                <option value="sucre">Sucre</option>
-                <option value="tolima">Tolima</option>
-                <option value="valle-del-cauca">Valle del Cauca</option>
-                <option value="vaupes">Vaupés</option>
-                <option value="vichada">Vichada</option>
-            </select>
-        </div>
-
-        <div class="text_maspo"><h1>Mascotas Populares</h1></div>
+        <h1 class="text_maspo">Mascotas Populares</h1>
+        
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
