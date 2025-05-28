@@ -1,60 +1,66 @@
+const pokemonName = document.querySelector('.pokemon_name');
+const pokemonNumber = document.querySelector('.pokemon_number');
 const pokemonImage = document.querySelector('.pokemon__image');
 
+const form = document.querySelector('.form');
+const input = document.querySelector('.input_search');
+const buttonPrev = document.querySelector('.btn-prev');
+const buttonNext = document.querySelector('.btn-next');
 
+const audioPokemon = document.querySelector('.gritos');
 
-function fetchPoke(){
-    let id= document.getElementById("pokeId").value;
-    let solicitud = new XMLHttpRequest();
-    let url = `https://pokeapi.co/api/v2/pokemon/${id}`;
+let searchPokemon = 1;
 
-    solicitud.open('GET',url);
-    solicitud.onreadystatechange = (function(){
-        if(this.readyState === 4 && this.status===200){
-            let response = JSON.parse(this.responseText);
-            console.log(response["name"]);
-            displayPoke(response);}
-        });
+const fetchPokemon = async (pokemon) =>{
 
-    solicitud.send();
-}
-
-
-function displayPoke(data){
-    let pokemon = document.getElementById("showUp");
-    let nombre = (data["name"].charAt(0).toUpperCase())+(data["name"].slice(1));
-    console.log(nombre) ;
-    pokemon.innerHTML = `${data["id"]} - ${nombre}`;
-}
-
-
-function displaydata (data) {
-
-    let sprite =document.getElementById('Pokemon_Image');
+    const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
     
-    if (data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'] --- null ) {
-    sprite.innerHTML - ` 
-        <div style=" position: absolute; top: 30%" 
-        ></div>'
-    `
-}
-}   
 
-
-
-
-
-function anterior_id(){
-    console.log("Testing");
+    if(APIResponse.status == 200){
+        const data = await APIResponse.json();
+        return data;
+    }
 }
 
-function siguiente_id(){
-    console.log("Testing");
+const renderPokemon = async (pokemon) => {
+    pokemonName.innerHTML = 'Loading...';
+    pokemonNumber.innerHTML ='';
+
+    const data = await fetchPokemon(pokemon);
+
+    if (data){
+        pokemonImage.style.display='block';
+        pokemonName.innerHTML=data.name;
+        pokemonNumber.innerHTML = data.id;
+        pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
+        audioPokemon.src = data.cries.latest;
+        input.value='';
+        searchPokemon=data.id;
+    }else{
+        pokemonImage.style.display='none';
+        pokemonName.innerHTML="No se encontro :sad feis:";
+        pokemonNumber.innerHTML= '';
+    }
+
 }
 
-const input=document.getElementById("pokeId");
-input.addEventListener("keydown", function (event)  {
-    if(event.key==="Enter"){
-        fetchPoke();
-        input.value = "";
+form.addEventListener('submit', (event)=>{
+    event.preventDefault();
+    renderPokemon(input.value.toLowerCase());
+})
+
+buttonPrev.addEventListener('click',()=>{
+    if (searchPokemon >1){
+        searchPokemon -= 1;
+        renderPokemon(searchPokemon);
     }
 });
+
+buttonNext.addEventListener('click',()=>{
+    
+        searchPokemon += 1;
+        renderPokemon(searchPokemon);
+    
+});
+
+renderPokemon(searchPokemon);
