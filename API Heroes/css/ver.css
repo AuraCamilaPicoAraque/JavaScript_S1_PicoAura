@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "titulo";
+    src: url(../img/font/Lato-Bold.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: 	linear-gradient(to right, #141e30, #243b55);
+}
+
+.character-card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.character-card:hover {
+    transform: translateY(-5px);
+}
+
+.character-card .card-img-top {
+    height: 25vw;
+    object-fit: cover;
+    background: #111;
+    border-bottom: 1px solid #444;
+}
+
+.character-card .card-body {
+    padding: 1.2rem;
+    background-color: #fff;
+    border-top: 4px solid #000000;
+}
+
+.character-card .card-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #dc3545;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.character-card p {
+    font-size: 0.95rem;
+    margin: 0.3rem 0;
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+}
+
+.character-card p strong {
+    color: #444;
+}
+
+.traje-list span {
+    background: #dee2e6;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    margin-right: 4px;
+}
+
+.btn-add {
+    margin: 1rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-add:hover {
+    background-color: #bb2d3b;
+}
+
+.añadir {
+    width: 8vw;
+    height: 3.5vw;
+
+    font-family: "titulo";
+
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    box-shadow: -3px 5px 1px rgba(0, 0, 0, 0.3);
+}

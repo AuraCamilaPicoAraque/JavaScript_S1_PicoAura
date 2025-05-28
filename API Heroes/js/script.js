@@ -1,5 +1,5 @@
 
-const api = 'https://681bd7ee6ae7c794cf6ff13d.mockapi.io/heroe';
+const api = 'https://681bd7ee6ae7c794cf6ff13d.mockapi.io/heroes';
 
 // Función para validar campos obligatorios
 function validarCampos() {
